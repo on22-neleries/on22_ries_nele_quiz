@@ -51,6 +51,14 @@ const score = computed(() => {
 	})
 	return value
 })
+
+//aktuelle Frage
+const getCurrentQuestion = computed(() => {
+	let question = questions.value[currentQuestion.value]
+	question.index = currentQuestion.value
+	return question
+})
+
 </script>
 
 <template>
