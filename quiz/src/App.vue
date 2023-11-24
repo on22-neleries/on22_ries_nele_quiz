@@ -1,5 +1,18 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import { ref, computed } from 'vue'
+
+//Fragen & Antwortmöglichkeiten
+const questions = ref([
+  {
+	question: 'Wie entsehen Ebbe und Flut?',
+	answer: 1,
+	options: [
+		'Die Gezeiten entstehen, weil 🐠 im Ozean Tango tanzen und dabei das Wasser durcheinanderwirbeln.',
+		'Gezeiten sind Meeresspiegelschwankungen, ausgelöst durch die Gravitation von ☀️ und 🌕. Es gibt zwei Hauptgezeiten täglich - Hochwasser und Niedrigwasser.',
+		'Gezeiten sind das Ergebnis davon, dass 🐋 im Meer Hula-Hoop spielen und dabei versehentlich Wellen erzeugen.'
+	],
+	selected: null
+  },
 </script>
 
 <template>
