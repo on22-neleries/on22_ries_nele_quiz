@@ -5,3 +5,19 @@
 	border-radius: 15px;
 	font-family: 'Blogger Sans', sans-serif;
 }
+
+body {
+	background-image: url(/IMG_1260.JPG);
+	background-size: cover;
+	background-position: center;
+	color: #FFF;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+	height: 100vh;
+	margin-top: 100px;
+}
