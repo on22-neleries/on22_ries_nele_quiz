@@ -85,7 +85,18 @@ const NextQuestion = () => {
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <main class="app">
+		<h1>Das Nordsee-Quiz🌊</h1>
+		
+		<!--Quiz-Bereich-->
+		<section class="quiz" v-if="!quizCompleted">
+			<!--Fragenanzeige-->
+			<div class="quiz-info">
+				<span class="frage">{{ getCurrentQuestion.question }}</span>
+			</div>
+
+    </section>
+    </main>
 </template>
 
 <style scoped>
