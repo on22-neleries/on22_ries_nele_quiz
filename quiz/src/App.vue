@@ -65,6 +65,15 @@ const SetAnswer = (e) => {
 	e.target.value = null
 }
 
+//Funktion für die nächste Frage
+const NextQuestion = () => {
+	if (currentQuestion.value < questions.value.length - 1) {
+		currentQuestion.value++
+		return
+	}
+	
+	quizCompleted.value = true
+}
 </script>
 
 <template>
