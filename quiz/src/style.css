@@ -81,3 +81,27 @@ h1 {
 	border-radius: 0.5rem;
 	cursor: pointer;
 }
+
+.option:hover {
+	background-color: #5eb1f5;
+}
+
+.option.richtig {
+	background-color: #2cce7d;
+}
+
+.option.falsch {
+	background-color: #ff5a5f;
+}
+
+.option:last-of-type {
+	margin-bottom: 0;
+}
+
+.option.disabled {
+	opacity: 0.5;
+}
+
+.option input {
+	display: none;
+}
