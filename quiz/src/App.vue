@@ -24,6 +24,18 @@ const questions = ref([
 	],
 	selected: null
   },
+
+  {
+	question: 'Welche Gefahr droht Schiffen in der Nordsee oft durch das Wetter?',
+	answer: 0,
+	options: [
+		'Stürmische 💨 und hohe 🌊 können die Navigation erschweren.',
+		'Die Nordsee ist berüchtigt für fliegende Piratenmöwen, die 🚢 überfallen.',
+		'In der Nordsee gibt es regelmäßige 🌪️-Wettbewerbe für Schiffe, die nach dem besten Wellenritt suchen.'
+	],
+	selected: null
+  }
+])
 </script>
 
 <template>
