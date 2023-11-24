@@ -100,6 +100,36 @@ const NextQuestion = () => {
 				<span class="Punkt">Punkte {{ score }}/{{ questions.length }}</span>
 			</div>
 
+      <!--Antwortoptionen-->
+			<div class="options">
+				<label 
+					v-for="(option, index) in getCurrentQuestion.options" 
+					:for="'option' + index" 
+					:class="`option ${
+						getCurrentQuestion.selected == index 
+							? index == getCurrentQuestion.answer 
+								? 'richtig' 
+								: 'falsch'
+							: ''
+					} ${
+						getCurrentQuestion.selected != null &&
+						index != getCurrentQuestion.selected
+							? 'disabled'
+							: ''
+					}`">
+					<input 
+						type="radio" 
+						:id="'option' + index" 
+						:name="getCurrentQuestion.index" 
+						:value="index" 
+						v-model="getCurrentQuestion.selected" 
+						:disabled="getCurrentQuestion.selected"
+						@change="SetAnswer" 
+					/>
+					<span>{{ option }}</span>
+				</label>
+			</div>
+
     </section>
     </main>
 </template>
