@@ -131,6 +131,23 @@ const NextQuestion = () => {
 			</div>
 
     </section>
+
+    <!--Button "Nächste Frage"-->
+		<button 
+				v-if="!quizCompleted"
+				@click="NextQuestion" 
+				:disabled="!getCurrentQuestion.selected"
+				class="quiz-button">
+
+				{{ 
+					getCurrentQuestion.index == questions.length - 1 
+						? 'Fertig' 
+						: getCurrentQuestion.selected == null
+							? 'Wähle die richtige Antwort aus'
+							: 'Nächste Frage'
+				}}
+		</button>
+    
     </main>
 </template>
 
