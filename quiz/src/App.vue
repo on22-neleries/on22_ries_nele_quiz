@@ -95,6 +95,11 @@ const NextQuestion = () => {
 				<span class="frage">{{ getCurrentQuestion.question }}</span>
 			</div>
 
+      <!--Punktestand-->
+			<div class="punktestand">
+				<span class="Punkt">Punkte {{ score }}/{{ questions.length }}</span>
+			</div>
+
     </section>
     </main>
 </template>
