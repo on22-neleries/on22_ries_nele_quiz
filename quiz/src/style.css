@@ -38,3 +38,23 @@ h1 {
 	width: 100%;
 	max-width: 640px;
 }
+
+.quiz-info {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.punktestand {
+	position: fixed;
+	top: 20px;
+	right: 50px;
+	background-color: lightblue;
+	color: #ffffff;
+	padding: 15px;
+	border-radius: 15px;
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
