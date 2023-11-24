@@ -147,7 +147,13 @@ const NextQuestion = () => {
 							: 'Nächste Frage'
 				}}
 		</button>
-    
+
+    <!--Ergebnisanzeige-->
+		<section v-else class="result-box">
+			<h2>Du hast das Quiz beendet!</h2>
+			<p>Deine Punktzahl: {{ score }}/{{ questions.length }}</p>
+		</section>
+
     </main>
 </template>
 
