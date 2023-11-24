@@ -59,6 +59,12 @@ const getCurrentQuestion = computed(() => {
 	return question
 })
 
+//Funktion zum Setzen der Antwort
+const SetAnswer = (e) => {
+	questions.value[currentQuestion.value].selected = e.target.value
+	e.target.value = null
+}
+
 </script>
 
 <template>
