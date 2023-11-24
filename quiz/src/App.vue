@@ -36,6 +36,21 @@ const questions = ref([
 	selected: null
   }
 ])
+
+const quizCompleted = ref(false)
+const currentQuestion = ref(0)
+
+//Berechnung der Punktzahl
+const score = computed(() => {
+	let value = 0
+	questions.value.map(q => {
+		if (q.selected != null && q.answer == q.selected) {
+			console.log('richtig');
+			value++
+		}
+	})
+	return value
+})
 </script>
 
 <template>
