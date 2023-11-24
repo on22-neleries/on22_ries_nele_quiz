@@ -13,6 +13,17 @@ const questions = ref([
 	],
 	selected: null
   },
+
+  {
+	question: 'Welche wichtige Funktion erfüllt das Wattenmeer in der Nordsee?',
+	answer: 0,
+	options: [
+		'Das Wattenmeer dient als wichtiger Lebensraum für eine Vielzahl von Meereslebewesen 🐡🦈🧜🏻',
+		'Das Wattenmeer ist ein gigantisches Trampolin für springende 🐟',
+		'Das Wattenmeer ist der geheime Trainingsplatz für 🦑-Marathons.'
+	],
+	selected: null
+  },
 </script>
 
 <template>
